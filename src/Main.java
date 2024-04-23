@@ -1,21 +1,21 @@
 public class Main {
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      int customer=100;
-      int volume=1500;
-      int bonus;
+        int CustomerAccount = 100; //На счету у клиента
+        int UploadVolume = 1500; //Внесённая сумма
+        int bonus;
 
-      if (volume >= 1000) {
-          bonus = volume / 100;
-      } else {
-          bonus = 0;
-      }
+        if (UploadVolume >= 1000) {
+            bonus = UploadVolume / 100; // По рублю за каждые 100 руб
+        } else {
+            bonus = 0;
+        }
 
-      int itog = customer + volume + bonus;
+        int ResultAccount = CustomerAccount + UploadVolume + bonus;
 
-      System.out.println("Вы пополнили счёт на " + volume + " руб");
-      System.out.println("Ваш бонус составил " + bonus + " руб");
-      System.out.println("Ваш баланс " + itog + " руб");
+        System.out.println("Вы пополнили счёт на " + UploadVolume + " руб");
+        System.out.println("Ваш бонус составил " + bonus + " руб");
+        System.out.println("Ваш баланс " + ResultAccount + " руб");
 
-  }
+    }
 }
